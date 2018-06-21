@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ARTranslator
+
+  Created by Nora AlNashwan on 21/06/2018.
+  Copyright © 2018 Nora AlNashwan. All rights reserved.
+*/
+
+changePrivacySetting = "AVCam doesn't have permission to use the camera, please change privacy settings";
+configurationErrorMessage = "Something goes wrong during capture session configuration";
+InputAdditionErrorMessage = "Could not add video device input to the session";
+InputCreationErrorMessage = "Could not create video device input";
+OutputAdditionErrorMessage = "Could not add photo output to the session";
