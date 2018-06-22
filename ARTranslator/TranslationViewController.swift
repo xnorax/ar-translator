@@ -21,17 +21,27 @@ class TranslationViewController: FormViewController,  UINavigationControllerDele
         super.viewDidLoad()
 
         languageTranslator = LanguageTranslator(username: Credentials.tr_username, password: Credentials.tr_password)
-        languageTranslator.listIdentifiableLanguages{IdentifiedLanguages in
-            for language in IdentifiedLanguages.languages {
-                self.languageList[language.language] = language.name
-            }
+        
+        languageList = ["Arabic":"ar",
+            "Chinese (Simplified)":"zh",
+            "Chinese (Traditional)":"zh-TW",
+            "Dutch":"nl",
+            "English":"en",
+            "French":"fr",
+            "German":"de",
+            "Italian":"it",
+            "Japanese":"ja",
+            "Korean":"ko",
+            "Polish":"pl",
+            "Portuguese":"pt",
+            "Russian":"ru",
+            "Spanish":"es",
+            "Turkish":"tr"]
+       
             for (_, value) in self.languageList {
                 self.languageNames.append(value)
             }
-            DispatchQueue.main.async {
             self.setUpForm()
-            }
-        }
     }
     
     private func setUpForm() {
@@ -49,7 +59,12 @@ class TranslationViewController: FormViewController,  UINavigationControllerDele
                 row.value = "Detect Language"
                 }.onChange({ (row) in
                     let params = self.fetchFormValues()
-                    let failure = { (error: Error) in print(error) }
+                    let failure = { (error: Error) in
+                        let alertController = UIAlertController(title: "", message: error.localizedDescription, preferredStyle: .alert)
+                        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                        alertController.addAction(defaultAction)
+                        self.present(alertController, animated: true)
+                    }
                     let request = TranslateRequest(text: [params["from"]!], modelID: "en-"+params["target"]!+"-conversational")
                     self.languageTranslator.translate(request: request, failure: failure) { translation in
                         DispatchQueue.main.async {

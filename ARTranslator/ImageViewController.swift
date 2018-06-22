@@ -44,6 +44,8 @@ class ImageViewController: UIViewController {
        visualRecognition = VisualRecognition(version: "2018-06-21", accessToken: Credentials.vr_sessionKey)
         let failure = { (error: Error) in
             let alert = UIAlertController(title: "",message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(defaultAction)
             self.present(alert, animated: true, completion: nil)
         }
         var result = ""
