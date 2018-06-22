@@ -9,11 +9,6 @@
 import UIKit
 import VisualRecognitionV3
 
-struct Language {
-    let code: String
-    let name: String
-}
-
 class ImageViewController: UIViewController {
     
     
@@ -26,12 +21,6 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.rightBarButtonItem  = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(self.goToNextViewController))
-        self.languageList = [Language(code: "en", name: "English"),
-                        Language(code: "es", name: "Spanish"),
-                        Language(code: "fr", name: "French"),
-                        Language(code: "de", name: "German"),
-                        Language(code: "it", name: "Italian"),
-                        Language(code: "pt", name: "Portuguese")]
         
         if let availableImage = capturedImage {
             imageView.image = availableImage

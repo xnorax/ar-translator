@@ -2,7 +2,7 @@
 
 *Read this in other languages: [العربية](README-ar.md).* -->
 
-# Create a mobile app for augmented reality translation
+# Create a Mobile App for Augmented Reality Translation
 
 <table>
   <tr>
@@ -25,7 +25,7 @@ When the reader has completed this journey, they will understand how to:
 * Create a mobile app that translates text in a photo using Watson Visual Recognition
 * Use Watson Language Translator to translated written text
 
-[comment]: <> (architicture image)
+<!-- [comment]: <> (architicture image) -->
 
 ## Flow
 1. The user takes a photo via the mobile app and move automatically to the second user interface.
