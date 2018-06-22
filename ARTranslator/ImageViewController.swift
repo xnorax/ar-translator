@@ -15,7 +15,6 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var capturedImage: UIImage?
-    var languageList: [Language]?
     var visualRecognition: VisualRecognition!
 
     override func viewDidLoad() {
