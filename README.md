@@ -18,7 +18,7 @@
   </tr>
 </table>
 
-In this developer journey, we will create an iOS mobile app using Swift, Watson Visual Recognition and Watson Language Translator. The Visual Recognition service will be used to identify text of a captured images. That text can then be translated to any of the supported 60+ languages by Watson Language Translator.
+In this developer journey, we will create an iOS mobile app using Swift, Watson Visual Recognition and Watson Language Translator. The Visual Recognition service will be used to identify text of a captured images. That text can then be translated to any of the supported languages by Watson Language Translator.
 
 When the reader has completed this journey, they will understand how to:
 
