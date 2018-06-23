@@ -10,7 +10,7 @@ import UIKit
 
 struct Credentials {
     //Watson Visual Recognition and Language Translator APIs
-    static let version              = ""
+    static let version              = "2018-06-23"
     static let vr_apiKey            = ""
     static let tr_username          = ""
     static let tr_password          = ""

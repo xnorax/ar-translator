@@ -1,19 +1,19 @@
-<!-- [![Build Status](https://travis-ci.org/IBM/watson-banking-chatbot.svg?branch=master)](https://travis-ci.org/IBM/watson-banking-chatbot)
+<!-- [![Build Status](https://travis-ci.org/IBM/watson-banking-chatbot.svg?branch=master)](https://travis-ci.org/IBM/watson-banking-chatbot)-->
 
-*Read this in other languages: [العربية](README-ar.md).* -->
+*Read this in other languages: [العربية](README-ar.md).* 
 
 # Create a Mobile App for Augmented Reality Translation
 
 <table>
   <tr>
     <th>
-      <img src="./screenshots/1.PNG" width="220"/>
+      <img src="./images/screenshot-1.PNG" width="220"/>
     </th>
     <th>
-      <img src="./screenshots/2.PNG" width="220"/>
+      <img src="./images/screenshot-2.PNG" width="220"/>
     </th>
     <th>
-    <img src="./screenshots/3.jpeg" width="220"/>
+    <img src="./images/screenshot-3.PNG" width="220"/>
     </th>
   </tr>
 </table>
@@ -22,15 +22,15 @@ In this developer journey, we will create an iOS mobile app using Swift, Watson 
 
 When the reader has completed this journey, they will understand how to:
 
-* Create a mobile app that translates text in a photo using Watson Visual Recognition
-* Use Watson Language Translator to translated written text
+* Create a mobile app that recognizes text in a photo using Watson Visual Recognition
+* Use Watson Language Translator to translate written text
 
-<!-- [comment]: <> (architicture image) -->
+![Architecture](./images/architecture.png)
 
 ## Flow
-1. The user takes a photo via the mobile app and move automatically to the second user interface.
-2. User image is processed with Visual Recognition to detect English text in the captured image.
-3. Optionally, user can edit or add to the identified text labels.
+1. The user takes a photo via the mobile app.
+2. User move to the second user interfact to confirm and click **Next**.
+3. image is processed with Visual Recognition to detect English text in the captured image.
 4. User chooses a language to translate the English text into.
 
 ## With Watson
@@ -58,9 +58,9 @@ Want to take your Watson app to the next level? Looking to leverage Watson Brand
 ### Step 1. Clone the repository
 
 - At a command line, clone this repo:
-```
-git clone [repo link]
-```
+  ```
+  git clone [repo link]
+  ```
 ### Step 2. Create required services
 
 - Log into your IBM Cloud account. [Sign up](http://bluemix.net/) if you do not already have one.
@@ -75,21 +75,26 @@ git clone [repo link]
 
 ### Step 4. Download the required frameworks
 
-- Using [Carthage](), run the following command to create a Carthage file
-```
-touch Cartfile
-```
+- Using [Carthage](https://github.com/Carthage/Carthage#installing-carthage), run the following command to create a Cartfile
+  ```
+  touch Cartfile
+  ```
 
 - Specify the frameworks in your carthage file
-```
-github "watson-developer-cloud/swift-sdk"
-github "xmartlabs/Eureka" ~> 4.0
-```
+  ```
+  github "watson-developer-cloud/swift-sdk"
+  github "xmartlabs/Eureka" ~> 4.0
+  ```
 
 - Then run the following command to build the dependencies and frameworks:
-```
-carthage update --platform iOS
-```
-You should then see the downloaded frameworks in `Carthage/Build/iOS` folder
+  ```
+  carthage update --platform iOS
+  ```
+  You should then see the downloaded frameworks in `Carthage/Build/iOS` folder
 
-- On Xcode, select your application target and then the "General" tab. Now drag `VisualRecognitionV3.framework`, `LanguageTranslatorV2.framework` and `Eureka.framework`  to the **Embedded Binaries** section and you're done :]
+- In that folder, select the following frameworks: 
+  - VisualRecognitionV3.framework 
+  - LanguageTranslatorV2.framework
+  - Eureka.framework 
+  
+  and drag it to the Embedded Library section of your target’s General tab and you're done 🎉

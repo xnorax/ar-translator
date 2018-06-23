@@ -43,7 +43,8 @@ class ViewController: UIViewController {
             case .success:
                 DispatchQueue.main.async { [unowned self] in
                     self.previewLayer = AVCaptureVideoPreviewLayer(session: self.session)
-                    self.previewLayer.frame = self.previewView.bounds
+                    self.previewLayer.frame = UIScreen.main.bounds
+                    self.previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
                     self.previewView.layer.addSublayer(self.previewLayer)
                     self.session.startRunning()
                 }
@@ -198,6 +199,7 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
         }
         self.present(alert, animated: true, completion: nil)
     }
+    
     
 }
 

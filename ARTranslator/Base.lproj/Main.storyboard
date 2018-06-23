@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Augmented Reality Translator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARTranslator" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,8 +19,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfA-Hy-rhG">
+                                <rect key="frame" x="0.5" y="32" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psz-sp-Oli">
-                                <rect key="frame" x="155.5" y="601" width="64" height="64"/>
+                                <rect key="frame" x="150" y="582" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Psz-sp-Oli" secondAttribute="height" multiplier="1:1" id="dk3-8h-FnB"/>
                                 </constraints>
@@ -29,31 +34,25 @@
                                     <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchDown" id="WAC-Fm-ZJK"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfA-Hy-rhG">
-                                <rect key="frame" x="0.5" y="132" width="375" height="467"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rfA-Hy-rhG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="JeD-qp-0fW"/>
-                            <constraint firstItem="Psz-sp-Oli" firstAttribute="top" secondItem="rfA-Hy-rhG" secondAttribute="bottom" constant="2" id="Pdv-yv-xd3"/>
                             <constraint firstItem="Psz-sp-Oli" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RM4-JT-UYj"/>
-                            <constraint firstItem="rfA-Hy-rhG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cdx-f3-PKH"/>
-                            <constraint firstItem="rfA-Hy-rhG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="fqT-14-4dd"/>
-                            <constraint firstItem="rfA-Hy-rhG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="pP5-Ll-WUk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Psz-sp-Oli" secondAttribute="bottom" constant="2" id="sym-mY-bpR"/>
+                            <constraint firstItem="Psz-sp-Oli" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="btV-ap-jfu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Psz-sp-Oli" secondAttribute="bottom" constant="10" id="sym-mY-bpR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cTa-B5-ZKB"/>
+                    <navigationItem key="navigationItem" title="Augmented Reality Translator" id="cTa-B5-ZKB">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="28a-Rf-yv4"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="previewView" destination="rfA-Hy-rhG" id="7aC-WO-elC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4832.8000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="4586" y="133"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="gTi-L3-hoU">
@@ -64,23 +63,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H1D-79-KhZ">
-                                <rect key="frame" x="0.5" y="110.5" width="375" height="466.5"/>
+                                <rect key="frame" x="0.5" y="10.5" width="375" height="667"/>
                             </imageView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="E1g-zG-Hai">
-                                <rect key="frame" x="173" y="328" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="2Hu-mP-pe2"/>
-                                    <constraint firstAttribute="width" secondItem="E1g-zG-Hai" secondAttribute="height" multiplier="1:1" id="bqz-rK-2D6"/>
-                                </constraints>
-                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="E1g-zG-Hai" firstAttribute="centerX" secondItem="H1D-79-KhZ" secondAttribute="centerX" id="4Cd-Pu-uBn"/>
                             <constraint firstItem="H1D-79-KhZ" firstAttribute="centerX" secondItem="gNK-zc-vIs" secondAttribute="centerX" id="9g0-Xa-DBT"/>
-                            <constraint firstItem="E1g-zG-Hai" firstAttribute="centerY" secondItem="H1D-79-KhZ" secondAttribute="centerY" id="BgP-dg-lFB"/>
-                            <constraint firstItem="H1D-79-KhZ" firstAttribute="height" secondItem="ZrL-G1-41Q" secondAttribute="height" multiplier="0.7" id="GEB-K5-85f"/>
+                            <constraint firstItem="H1D-79-KhZ" firstAttribute="height" secondItem="ZrL-G1-41Q" secondAttribute="height" id="GEB-K5-85f"/>
                             <constraint firstItem="H1D-79-KhZ" firstAttribute="centerY" secondItem="gNK-zc-vIs" secondAttribute="centerY" id="djO-7b-T5h"/>
                             <constraint firstItem="H1D-79-KhZ" firstAttribute="width" secondItem="ZrL-G1-41Q" secondAttribute="width" id="p5c-EK-ADT"/>
                         </constraints>
@@ -89,12 +78,11 @@
                     <navigationItem key="navigationItem" id="X8x-SY-ul8"/>
                     <connections>
                         <outlet property="imageView" destination="H1D-79-KhZ" id="yLv-6j-m2c"/>
-                        <outlet property="loadIndicator" destination="E1g-zG-Hai" id="rJm-mf-UuP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFB-hw-c9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6429.6000000000004" y="132.68365817091455"/>
+            <point key="canvasLocation" x="5527" y="133"/>
         </scene>
         <!--Translation View Controller-->
         <scene sceneID="vmj-sz-FEn">
@@ -119,6 +107,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0gj-hp-JAd">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.46274509803921571" green="0.72941176470588232" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
