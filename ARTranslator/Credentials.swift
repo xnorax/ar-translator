@@ -9,9 +9,9 @@
 import UIKit
 
 struct Credentials {
-        //Watson Visual Recognition and Language Translator APIs
-        static let vr_apiKey            = ""
-        static let vr_sessionKey        = ""
-        static let tr_username          = ""
-        static let tr_password          = ""
+    //Watson Visual Recognition and Language Translator APIs
+    static let version              = ""
+    static let vr_apiKey            = ""
+    static let tr_username          = ""
+    static let tr_password          = ""
 }

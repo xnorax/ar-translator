@@ -38,8 +38,8 @@ class TranslationViewController: FormViewController,  UINavigationControllerDele
             "Spanish":"es",
             "Turkish":"tr"]
        
-            for (_, value) in self.languageList {
-                self.languageNames.append(value)
+            for (key, _) in self.languageList {
+                self.languageNames.append(key)
             }
             self.setUpForm()
     }
@@ -97,8 +97,8 @@ class TranslationViewController: FormViewController,  UINavigationControllerDele
 
     private func extractLanguageCodeFromLanguageName(name: String) -> String? {
         for (key, value) in self.languageList {
-            if name == value {
-                return key
+            if name == key {
+                return value
             }
         }
         return nil
