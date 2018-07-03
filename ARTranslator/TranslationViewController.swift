@@ -8,7 +8,7 @@
 
 import UIKit
 import Eureka
-import LanguageTranslatorV2
+import LanguageTranslatorV3
 
 class TranslationViewController: FormViewController,  UINavigationControllerDelegate {
     
@@ -20,7 +20,7 @@ class TranslationViewController: FormViewController,  UINavigationControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        languageTranslator = LanguageTranslator(username: Credentials.tr_username, password: Credentials.tr_password)
+        languageTranslator = LanguageTranslator(username: Credentials.tr_username, password: Credentials.tr_password, version: Credentials.version)
         
         languageList = ["Arabic":"ar",
             "Chinese (Simplified)":"zh",
@@ -65,7 +65,7 @@ class TranslationViewController: FormViewController,  UINavigationControllerDele
                         alertController.addAction(defaultAction)
                         self.present(alertController, animated: true)
                     }
-                    let request = TranslateRequest(text: [params["from"]!], modelID: "en-"+params["target"]!+"-conversational")
+                    let request = TranslateRequest(text: [params["from"]!], source:"en",target:params["target"]!)
                     self.languageTranslator.translate(request: request, failure: failure) { translation in
                         DispatchQueue.main.async {
                             self.form.rowBy(tag: "translatedText")?.value = translation.translations[0].translationOutput

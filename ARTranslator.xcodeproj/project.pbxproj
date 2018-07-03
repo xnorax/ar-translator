@@ -8,32 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		8826AAD020DB0CD500743A2D /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AACF20DB0CD500743A2D /* TranslationViewController.swift */; };
-		8826AAD220DB0D0100743A2D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8826AAD120DB0D0000743A2D /* Eureka.framework */; };
-		8826AAD320DB0D0100743A2D /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8826AAD120DB0D0000743A2D /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8826AAD520DB217600743A2D /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8826AAD420DB217600743A2D /* LanguageTranslatorV2.framework */; };
-		8826AAD620DB217600743A2D /* LanguageTranslatorV2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8826AAD420DB217600743A2D /* LanguageTranslatorV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8826AAD820DB385E00743A2D /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AAD720DB385E00743A2D /* Credentials.swift */; };
 		8826AADA20DB3BE400743A2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8826AAD920DB3BE400743A2D /* Localizable.strings */; };
-		8842A0B120D9D8C300AB66C8 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8842A0B020D9D8C300AB66C8 /* VisualRecognitionV3.framework */; };
-		8842A0B220D9D8C300AB66C8 /* VisualRecognitionV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8842A0B020D9D8C300AB66C8 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8861F9D720D84AAF00663EE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861F9D620D84AAF00663EE6 /* AppDelegate.swift */; };
 		8861F9D920D84AAF00663EE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861F9D820D84AAF00663EE6 /* ViewController.swift */; };
 		8861F9DC20D84AAF00663EE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8861F9DA20D84AAF00663EE6 /* Main.storyboard */; };
 		8861F9DE20D84AB000663EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8861F9DD20D84AB000663EE6 /* Assets.xcassets */; };
 		8861F9E120D84AB000663EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8861F9DF20D84AB000663EE6 /* LaunchScreen.storyboard */; };
 		8861F9E920D8527B00663EE6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861F9E820D8527B00663EE6 /* ImageViewController.swift */; };
+		88885F7820EB2B54006D8EE7 /* LanguageTranslatorV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88885F7620EB2B54006D8EE7 /* LanguageTranslatorV3.framework */; };
+		88885F7920EB2B54006D8EE7 /* LanguageTranslatorV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88885F7620EB2B54006D8EE7 /* LanguageTranslatorV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88885F7A20EB2B54006D8EE7 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88885F7720EB2B54006D8EE7 /* VisualRecognitionV3.framework */; };
+		88885F7B20EB2B54006D8EE7 /* VisualRecognitionV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88885F7720EB2B54006D8EE7 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88885F7E20EB2C19006D8EE7 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88885F7D20EB2C19006D8EE7 /* Eureka.framework */; };
+		88885F7F20EB2C19006D8EE7 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88885F7D20EB2C19006D8EE7 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8842A0B320D9D8C300AB66C8 /* Embed Frameworks */ = {
+		88885F7C20EB2B54006D8EE7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8842A0B220D9D8C300AB66C8 /* VisualRecognitionV3.framework in Embed Frameworks */,
-				8826AAD620DB217600743A2D /* LanguageTranslatorV2.framework in Embed Frameworks */,
-				8826AAD320DB0D0100743A2D /* Eureka.framework in Embed Frameworks */,
+				88885F7F20EB2C19006D8EE7 /* Eureka.framework in Embed Frameworks */,
+				88885F7920EB2B54006D8EE7 /* LanguageTranslatorV3.framework in Embed Frameworks */,
+				88885F7B20EB2B54006D8EE7 /* VisualRecognitionV3.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,12 +42,9 @@
 
 /* Begin PBXFileReference section */
 		8826AACF20DB0CD500743A2D /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
-		8826AAD120DB0D0000743A2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
-		8826AAD420DB217600743A2D /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = "<group>"; };
 		8826AAD720DB385E00743A2D /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		8826AAD920DB3BE400743A2D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8842A0A620D8A25600AB66C8 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = ../../Desktop/Eureka.framework; sourceTree = "<group>"; };
-		8842A0B020D9D8C300AB66C8 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
 		8861F9D320D84AAF00663EE6 /* ARTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861F9D620D84AAF00663EE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8861F9D820D84AAF00663EE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +53,9 @@
 		8861F9E020D84AB000663EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8861F9E220D84AB000663EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8861F9E820D8527B00663EE6 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		88885F7620EB2B54006D8EE7 /* LanguageTranslatorV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LanguageTranslatorV3.framework; sourceTree = "<group>"; };
+		88885F7720EB2B54006D8EE7 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		88885F7D20EB2C19006D8EE7 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8842A0B120D9D8C300AB66C8 /* VisualRecognitionV3.framework in Frameworks */,
-				8826AAD520DB217600743A2D /* LanguageTranslatorV2.framework in Frameworks */,
-				8826AAD220DB0D0100743A2D /* Eureka.framework in Frameworks */,
+				88885F7E20EB2C19006D8EE7 /* Eureka.framework in Frameworks */,
+				88885F7820EB2B54006D8EE7 /* LanguageTranslatorV3.framework in Frameworks */,
+				88885F7A20EB2B54006D8EE7 /* VisualRecognitionV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +83,9 @@
 		8861F9CA20D84AAF00663EE6 = {
 			isa = PBXGroup;
 			children = (
-				8826AAD420DB217600743A2D /* LanguageTranslatorV2.framework */,
-				8826AAD120DB0D0000743A2D /* Eureka.framework */,
-				8842A0B020D9D8C300AB66C8 /* VisualRecognitionV3.framework */,
+				88885F7D20EB2C19006D8EE7 /* Eureka.framework */,
+				88885F7620EB2B54006D8EE7 /* LanguageTranslatorV3.framework */,
+				88885F7720EB2B54006D8EE7 /* VisualRecognitionV3.framework */,
 				8861F9D520D84AAF00663EE6 /* ARTranslator */,
 				8861F9D420D84AAF00663EE6 /* Products */,
 				8842A0A520D8A25500AB66C8 /* Frameworks */,
@@ -127,7 +127,7 @@
 				8861F9CF20D84AAF00663EE6 /* Sources */,
 				8861F9D020D84AAF00663EE6 /* Frameworks */,
 				8861F9D120D84AAF00663EE6 /* Resources */,
-				8842A0B320D9D8C300AB66C8 /* Embed Frameworks */,
+				88885F7C20EB2B54006D8EE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
